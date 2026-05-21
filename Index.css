@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f99e98;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header{
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("img/Human anatomy.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+
+.overlay p{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* MENU */
+
+nav{
+    background: #111927;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: rgb(49, 132, 153);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #60a5fa;
+}
+
+/* CONTENIDO */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* CAJONES */
+
+.card{
+    background: rgb(188, 197, 222);
+    width: 700px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card h2{
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+/* IMAGENES */
+
+.card img{
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* SISTEMAS */
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.box{
+    background: #dbeafe;
+    width: 500px;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box h3{
+    margin-bottom: 10px;
+    color: #1d4ed8;
+}
+
+/* ORGANOS */
+
+.organs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.organ-card{
+    width: 320px;
+    text-align: center;
+}
+
+.organ-card img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.organ-card h3{
+    margin-top: 10px;
+}
+
+.organ-card p{
+    margin-top: 10px;
+}
+
+/* LISTA */
+
+ul{
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* CURIOSIDADES */
+
+.facts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.fact{
+    background: #1e293b;
+    color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fact h3{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background: #020617;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size: 45px;
+    }
+
+    .overlay p{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .box,
+    .fact{
+        width: 100%;
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+    .organ-card img{
+        width: 100%;
+        height: auto;
+    }
+
+}
